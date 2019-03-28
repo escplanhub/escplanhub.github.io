@@ -1,0 +1,33 @@
+<div class="container-fluid justify-content-center">
+
+  {% if site.brand.twitter %}
+  <a class="social twitter mx-1" href="https://www.twitter.com/{{ site.brand.twitter }}">
+    <i class="fab fa-1x fa-twitter"></i>
+  </a>
+  {% endif %}
+
+  {% if site.brand.facebook %}
+  <a class="social facebook mx-1" href="https://www.facebook.com/{{ site.brand.facebook }}">
+    <i class="fab fa-1x fa-facebook"></i>
+  </a>
+  {% endif %}
+
+  {% if site.brand.email %}
+  <a class="social email mx-1" href="mailto:{{ site.brand.email }}">
+    <i class="fas fa-1x fa-envelope"></i>
+  </a>
+  {% endif %}
+
+  {% if site.brand.github %}
+  <a class="social github mx-1" href="https://www.github.com/{{ site.brand.github }}">
+    <i class="fab fa-1x fa-github"></i>
+  </a>
+  {% endif %}
+
+  {% if site.brand.linkedin %}
+  <a class="social linkedin mx-1" href="https://www.linkedin.com/in/{{ site.brand.linkedin }}">
+    <i class="fab fa-1x fa-linkedin-in"></i>
+  </a>
+  {% endif %}
+
+</div>

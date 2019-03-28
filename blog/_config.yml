@@ -14,6 +14,8 @@ markdown: kramdown
 
 
 # Author Info
+author:
+  name     : rodin
 brand:
   name     : EscPlan
   image    : http://vagabondexpedition.com/wp-content/uploads/2015/06/1024-ve-jeep-on-mountain-side-DSC_5470.jpg

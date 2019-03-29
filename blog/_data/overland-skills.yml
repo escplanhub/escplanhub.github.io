@@ -1,0 +1,11 @@
+- name: Jeep, Truck
+  percentage: 70
+  color: danger
+
+- name: Motorbike
+  percentage: 80
+  color:
+
+- name: Foot
+  percentage: 80
+  color:

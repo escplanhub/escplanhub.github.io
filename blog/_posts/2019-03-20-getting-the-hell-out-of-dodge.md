@@ -1,8 +1,8 @@
 ---
 title: Getting The Hell Out of Dodge
 tags: [Overland, Disaster Prep, 3 days]
-style: 
-color: 
+style: fill
+color: light
 layout: post
 description: Leaving our primary habitat and surviving outdoors enroute to safer ground.
 ---

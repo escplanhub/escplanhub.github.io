@@ -8,6 +8,7 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
+	    <a class="nav-item nav-link" href="#search-input">Articles</a>
       {% assign pages = site.html_pages | sort: 'weight' %}
       {% for site_page in pages %}
         {% if site_page.title %}

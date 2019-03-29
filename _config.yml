@@ -16,7 +16,7 @@ markdown: kramdown
 
 # Author Info
 author:
-  name     : rodin
+  name     : sweeper
 brand:
   name     : EscPlan
   logo_sm  : /assets/escplan_breve.png

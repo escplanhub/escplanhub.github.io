@@ -1,0 +1,7 @@
+- name: Wilderness Survival
+  percentage: 50
+  color: info
+
+- name: Wilderness First Aid
+  percentage: 55
+  color: success

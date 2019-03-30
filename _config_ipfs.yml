@@ -1,5 +1,5 @@
 # Site settings
-title: EscPlan
+title: EscPlan (IPFS mirror)
 description: >- # this means to ignore newlines until "baseurl:"
   Get out.</br> 
   When it really matters.</br>
@@ -19,7 +19,7 @@ markdown: kramdown
 author:
   name     : sweeper
 brand:
-  name     : EscPlan (IPFS mirror)
+  name     : EscPlan
   logo_sm  : /assets/escplan_breve.png
   logo     : /assets/escplan_alpha.png
   image    : /assets/jeep_camp.jpg

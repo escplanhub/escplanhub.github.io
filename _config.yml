@@ -5,6 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   When it really matters.</br>
   Also on weekends.
 baseurl: ""  # the subpath of your site, e.g. /blog
+#baseurl: "/ipns/escplan.com"  # the subpath of your site, e.g. /blog
 url: "https://escplan.com" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: "UA-137274873-1"
 

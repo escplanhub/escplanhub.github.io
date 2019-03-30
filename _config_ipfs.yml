@@ -1,0 +1,42 @@
+# Site settings
+title: EscPlan
+description: >- # this means to ignore newlines until "baseurl:"
+  Get out.</br> 
+  When it really matters.</br>
+  Also on weekends.
+baseurl: "/ipns/escplan.com"  # the subpath of your site, e.g. /blog
+url: "https://escplan.com" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: "UA-137274873-1"
+
+
+# Build settings
+markdown: kramdown
+# plugins:
+# - jekyll-feed
+
+
+# Author Info
+author:
+  name     : sweeper
+brand:
+  name     : EscPlan (IPFS mirror)
+  logo_sm  : /assets/escplan_breve.png
+  logo     : /assets/escplan_alpha.png
+  image    : /assets/jeep_camp.jpg
+  email    :
+  github   : 
+  twitter  : 
+  linkedin : 
+  facebook : 
+
+# Posts default Permalink
+permalink: /:title
+
+
+# Exclude from processing.
+exclude:
+- README.md
+- CONTRIBUTING.md
+- LICENSE
+- Gemfile
+- Gemfile.lock

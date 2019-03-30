@@ -1,0 +1,5 @@
+#!/bin/sh
+echo =================== Default Build... ===================
+jekyll build
+echo ===================   IPFS Build...  ===================
+jekyll build --config _config_ipfs.yml -d _ipfs

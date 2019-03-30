@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Unpin all
+for ki in `ipfs pin ls|cut -d' ' -f1`;do ipfs pin rm -r $ki;done
+
+# Recursive add of _ipfs. Store new top-level key.
+topkey=$(ipfs add -r _ipfs|grep -e '_ipfs$'|cut -d' ' -f2)
+
+# Pin recursively. This is all we host in the IPFS Strategy setting
+ipfs pin add -r ${topkey}
+
+# Re-publish under hostID
+ipfs name publish ${topkey}

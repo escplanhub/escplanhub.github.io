@@ -1,4 +1,4 @@
-<div style="background-image: url('/assets/jeep_bishop.jpg'); background-position: center top; background-repeat: no-repeat;">
+<div style="background-image: url({{ '/assets/jeep_bishop.jpg' | relative_url }}); background-position: center top; background-repeat: no-repeat;">
 <div class="row justify-content-center align-items-center p-4">
   <div class="col-lg-6 col-md-6 text-center mt-4">
 
@@ -11,7 +11,7 @@
     </div-->
     
     <p class="wow animated slideInUp" data-wow-delay=".15s">
-    <img src="{{ site.brand.logo }}" style="width: 100%" alt="{{ site.title }}"><br/><br/>
+    <img src="{{ site.brand.logo  | relative_url }}" style="width: 100%" alt="{{ site.title | relative_url }}"><br/><br/>
     <b>{{ site.description }}</b></p>
 
   </div>

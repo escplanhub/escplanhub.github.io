@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light">
 
-  <a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{ site.brand.logo_sm }}" width="40px" style="padding-bottom: 10px"></a>
+  <a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{ site.brand.logo_sm  | relative_url }}" width="40px" style="padding-bottom: 10px"></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -8,7 +8,7 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-	    <a class="nav-item nav-link" href="/#search-input">Articles</a>
+	    <a class="nav-item nav-link" href={{ "/#search-input" | relative_url }}>Articles</a>
       {% assign pages = site.html_pages | sort: 'weight' %}
       {% for site_page in pages %}
         {% if site_page.title %}

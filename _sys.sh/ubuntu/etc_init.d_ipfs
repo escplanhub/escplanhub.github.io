@@ -1,0 +1,43 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides: ipfs
+# Required-Start: $local_fs $remote_fs $network $syslog $named
+# Required-Stop: $local_fs $remote_fs $network $syslog $named
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# X-Interactive: false
+# Short-Description: ipfs service
+### END INIT INFO
+IPFS_USER="rodin"
+ 
+DAEMON=/usr/local/bin/ipfs
+ 
+start() {
+   echo "Starting ipfs"
+   su -c 'ipfs daemon &' - $IPFS_USER
+}
+ 
+stop() {
+   echo "Stopping ipfs..."
+   su -c 'ipfs shutdown' - $IPFS_USER
+}
+ 
+case "$1" in
+ 
+   start)
+       start
+       ;;
+   stop)
+       stop
+       ;;
+   restart|reload|force-reload)
+       stop
+       start
+       ;;
+   *)
+       echo "Usage: /etc/init.d/ipfs {start|stop|reload|force-reload|restart}"
+       exit 1
+
+esac
+ 
+exit 0

@@ -33,6 +33,8 @@ brand:
 # Posts default Permalink
 permalink: /:title
 
+# nostr stuff
+include: [".well-known"]
 
 # Exclude from processing.
 exclude:
